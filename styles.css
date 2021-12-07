@@ -1,0 +1,144 @@
+body {
+    background-color: black;
+    color:white;
+    
+}
+
+html {
+    height:auto;
+}
+
+.grid-container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 150px 1fr;
+    grid-template-rows: repeat(auto);
+    grid-template-rows: 1fr;
+    align-items:start;
+    justify-items:start;
+    
+    
+
+}
+
+.tech-menu {
+    position: fixed;
+    height:100vh;
+    grid-column-start:1;
+    grid-column-end:2;
+    overflow:hidden;
+    margin:0 15px 0 0;
+    
+}
+
+.tech-menu h1 {
+    color: skyblue;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+h1 {
+    text-align: center;
+    margin:0;
+    height:100px;
+    padding:0;
+    word-wrap: break-word;
+    
+}
+
+#navbar {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height:80vh;   
+
+}
+
+#navbar a {
+    display: block;
+    text-align: center;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    color: skyblue;
+}
+.banner {
+    height:300px;
+    width:100%;
+    background-image: url("banner-bg-crypto.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:top;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: flex-end;
+}
+#main-doc {
+    grid-column-start: 2;
+    grid-column-end: -1;
+    text-align: center;
+    width:100%;
+    margin:5px 5px 5px 15px;
+    height:auto;
+}
+
+#main-doc a {
+    color:yellow;
+    
+}
+
+#main-doc h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+    color:black;
+}
+
+h2, h3 {
+    color:darkturquoise;
+    font-family: 'Bebas Neue', cursive;
+    text-align: left;
+    font-size: 1.9;
+   
+}
+
+#main-doc p {
+    text-align: justify;
+    margin: 0 15px 0 0;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-size: 1.25rem;
+}
+
+ul {
+    text-align: left;
+    font-size: 1.25rem;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+img {
+    height:300px;
+    width:400px;
+}
+
+#main-doc .final {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+    color:white;
+}
+
+@media screen and (max-width:500px) {
+    .tech-menu {
+        visibility: hidden;
+
+    }
+
+    #main-doc {
+        width: 100%;
+        grid-column-start:1;
+        grid-column-end:-1;
+    }
+
+    img {
+        height:150px;
+        width:200px;
+    }
+    
+}
